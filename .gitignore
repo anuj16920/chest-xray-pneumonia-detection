@@ -3,12 +3,12 @@ chest_xray/
 data/
 
 # Models (large files)
-models/
+
 *.h5
 *.keras
 
 # Results and outputs
-results/
+
 sample_predictions/
 logs/
 

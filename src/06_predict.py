@@ -217,7 +217,12 @@ class XRayPredictor:
 
 if __name__ == "__main__":
     # Configuration
-    MODEL_PATH = 'models/best_model.h5'
+    MODEL_PATH = 'models/fine_tuned_model.h5'  # Use fine-tuned model
+    
+    # Fallback to best_model.h5 if fine-tuned doesn't exist
+    if not os.path.exists(MODEL_PATH):
+        MODEL_PATH = 'models/best_model.h5'
+        print("⚠️  Fine-tuned model not found, using best_model.h5")
     
     if not os.path.exists(MODEL_PATH):
         print(f"\n❌ ERROR: Model not found at '{MODEL_PATH}'")

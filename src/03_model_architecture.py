@@ -1,4 +1,4 @@
-"""
+A"""
 Chest X-Ray Pneumonia Detection - Model Architecture
 This script defines the CNN model using Transfer Learning
 """

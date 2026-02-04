@@ -203,7 +203,7 @@ class PneumoniaDetector:
             ),
             EarlyStopping(
                 monitor='val_loss',
-                patience=10,
+                patience=15,  # Increased patience
                 restore_best_weights=True,
                 verbose=1
             ),
@@ -359,7 +359,7 @@ if __name__ == "__main__":
     DATA_DIR = 'chest_xray'  # Dataset in root directory
     IMG_SIZE = (224, 224)
     BATCH_SIZE = 32
-    EPOCHS = 25  # You can adjust this (25-30 epochs recommended)
+    EPOCHS = 40  # Increased for better convergence
     # =========================================
     
     # Check if data exists
