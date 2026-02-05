@@ -1,0 +1,30 @@
+======================================================================
+COMPREHENSIVE TEST SET METRICS
+======================================================================
+
+Model: models/best_model.h5
+Test samples: 624
+
+OVERALL METRICS:
+  Accuracy:    0.7356 (73.56%)
+  Precision:   0.9592 (95.92%)
+  Recall:      0.6026 (60.26%)
+  F1-Score:    0.7402 (74.02%)
+  AUC-ROC:     0.8896 (88.96%)
+  Specificity: 0.9573 (95.73%)
+
+CONFUSION MATRIX:
+  TN:  224  FP:   10
+  FN:  155  TP:  235
+
+PER-CLASS BREAKDOWN:
+              precision    recall  f1-score   support
+
+      NORMAL     0.5910    0.9573    0.7308       234
+   PNEUMONIA     0.9592    0.6026    0.7402       390
+
+    accuracy                         0.7356       624
+   macro avg     0.7751    0.7799    0.7355       624
+weighted avg     0.8211    0.7356    0.7367       624
+
+======================================================================

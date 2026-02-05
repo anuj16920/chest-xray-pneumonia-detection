@@ -162,7 +162,7 @@ class PneumoniaDetector:
         
         # Compile model
         self.model.compile(
-            optimizer=Adam(learning_rate=0.0001),
+            optimizer=Adam(learning_rate=0.00005),  # Lower learning rate
             loss='binary_crossentropy',
             metrics=[
                 'accuracy',
@@ -203,14 +203,14 @@ class PneumoniaDetector:
             ),
             EarlyStopping(
                 monitor='val_loss',
-                patience=15,  # Increased patience
+                patience=20,  # More patience
                 restore_best_weights=True,
                 verbose=1
             ),
             ReduceLROnPlateau(
                 monitor='val_loss',
                 factor=0.5,
-                patience=5,
+                patience=7,  # More patience
                 min_lr=1e-7,
                 verbose=1
             )
@@ -358,8 +358,8 @@ if __name__ == "__main__":
     # ============= CONFIGURATION =============
     DATA_DIR = 'chest_xray'  # Dataset in root directory
     IMG_SIZE = (224, 224)
-    BATCH_SIZE = 32
-    EPOCHS = 40  # Increased for better convergence
+    BATCH_SIZE = 16  # Reduced for better gradient updates
+    EPOCHS = 50  # Increased for better convergence
     # =========================================
     
     # Check if data exists
