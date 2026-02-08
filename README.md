@@ -376,6 +376,7 @@ This project is licensed under the MIT License.
 - TensorFlow/Keras: Google Brain Team
 
 ## 👨‍💻 Author
+LOMTE ANUJ
 
 Built with ❤️ using Python, TensorFlow, and Deep Learning
 
