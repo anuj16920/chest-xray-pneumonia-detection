@@ -2,21 +2,7 @@
 
 An AI-powered deep learning system that automatically detects pneumonia from chest X-ray images using Transfer Learning with ResNet50.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-2.15-orange.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 
-## 📋 Table of Contents
-- [Overview](#overview)
-- [Features](#features)
-- [Dataset](#dataset)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Usage](#usage)
-- [Model Architecture](#model-architecture)
-- [Results](#results)
-- [Web Interface](#web-interface)
-- [Disclaimer](#disclaimer)
 
 ## 🎯 Overview
 
